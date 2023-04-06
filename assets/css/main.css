@@ -1,0 +1,401 @@
+
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Default CSS Disable Margins/Padding and User Select */
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Body is unscrollable 100% of browser size */
+html, body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Discord : Sowwyz#1337 */
+
+/* Render and Canvas is 100% browser size */
+#render {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  opacity: 0;
+}
+
+/* Menu */
+#menu {
+  font-family: "megrim", cursive;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  display: none;
+}
+
+#menu h1{
+  padding-left: 10%;
+  font-weight:400;
+  font-size:calc(1.8rem + 3.6vmin);
+  margin-bottom:1vh;
+}
+
+#menu h2{
+  padding-left: 10%;
+  font-weight:400;
+  font-size:calc(.7rem + .9vmin);
+  margin-bottom:6vh;
+  letter-spacing:.22rem;
+}
+
+#menu p{
+  padding-left: 10%;
+  margin-bottom:4vh;
+  font-size:calc(.5rem + 3.6vmin);
+}
+
+a:active,a:link,a:visited {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* Alternating txt change on hover */
+#alternatingTxt #text2 {
+  display: none;
+}
+
+#alternatingTxt:hover #text2 {
+  display: block;
+}
+
+#alternatingTxt:hover #text1 {
+  display: none;
+}
+
+/* information CSS */
+#info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background: black;
+  z-index: 2;
+  display: none;
+  -webkit-animation: 1s bounce;
+  animation: 1s bounce;
+}
+
+#info.bounceOut {
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+/* Information Exit Button */
+#closeInfo {
+  position: absolute;
+  height: 40px;
+  width: 50px;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+  background: transparent;
+  font-family: "megrim";
+}
+
+#closeInfo:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transition: 1s;
+}
+
+.infoTxt {
+  color: white;
+  text-align: center;
+  font-size: 5em;
+  display: none;
+  transition: 1s;
+}
+
+/* SideWindow CSS Animation */
+@keyframes bounce {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */
+/* Discord : Sowwyz#1337 */

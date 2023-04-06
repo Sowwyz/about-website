@@ -1,0 +1,64 @@
+/* Center the loader animation */
+#loading {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 200px;
+	margin: -75px 0 0 -75px;
+	text-align: center;
+}
+
+/* Sylize loading text */
+.ldBar-label {
+    color: grey;
+    font-family: 'megrim'; 
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+/* Finished Loading Flair */
+#loadedText {
+	display: none;
+	font-family: 'megrim'; 
+    font-size: 1.5em;
+    font-weight: 900;
+
+	-webkit-animation: pulse 1s infinite ease-in-out;
+    -o-animation: pulse 1s infinite ease-in-out;
+    -ms-animation: pulse 1s infinite ease-in-out; 
+    -moz-animation: pulse 1s infinite ease-in-out; 
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(0.9); opacity: 0.7; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+/* Add animation to "page content" */
+.fade-in {
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 1s;
+	animation-name: fadein;
+	animation-duration: 1s
+}
+
+@-webkit-keyframes fadein {
+from { opacity:0 } 
+to { opacity:1 }
+}
+
+@keyframes fadein { 
+from{ opacity:0 } 
+to{ opacity:1 }
+}
+
