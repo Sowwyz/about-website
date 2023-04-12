@@ -1,5 +1,5 @@
 <h2 align="center">
-    Hello! Testing About Website<strong>;</strong> 😼
+    Hello! Private Website<strong>;</strong> 😼
 <br>
 <br>
 <a href="https://discord.com/users/394251966571872256">
@@ -14,17 +14,15 @@
 
 # Features 
 
-- Duck Loader 
-- About's
-- Duck Click To Continue Loader
++ Private index background and chungus.html
++ About's
++ [-] Soon Loader
 
-# Loader 
+# Images 
 
-![loader](https://user-images.githubusercontent.com/88189918/230239052-6875cf45-8fcc-4b8b-9bff-4d3ef48a8af2.png)
+![index](https://user-images.githubusercontent.com/88189918/231548314-c27d4d49-e593-4d1b-81c8-82d06e3d2920.png)
 
-![cs](https://user-images.githubusercontent.com/88189918/230239072-71e30411-f600-41fb-8dbe-568bc0f89090.png)
-
-![index](https://user-images.githubusercontent.com/88189918/230239078-ed685378-3264-4b32-ba6f-e90bc678023e.png)
+![chungus](https://user-images.githubusercontent.com/88189918/231548646-355d4436-1274-482f-a11f-cc1b187828e0.png)
 
 
 # Copyright 
